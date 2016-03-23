@@ -1,0 +1,26 @@
+{
+  "name": "pec01-p5",
+  "version": "0.0.1",
+  "private": true,
+  "description": "UOC Desarro. front-end frameworks Javascript PEC01_P5",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lluisandreu/uoc_js_pec1_p5.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-concat": "~1.0.0",
+    "grunt-contrib-compass": "~1.1.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-contrib-imagemin": "~1.0.0",
+    "grunt-browser-sync": "~2.2.0"
+  },
+  "author": "Lluis Oliver",
+  "license": "ISC",
+  "dependencies": {
+    "isotope-layout": "~2.2.2"
+  }
+}

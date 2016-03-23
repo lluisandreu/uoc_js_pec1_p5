@@ -1,0 +1,78 @@
+/// Site layout based on zen grids http://zengrids.com/
+
+.container .row {
+    max-width: $site-max-size + $gutter-size * 2;
+    padding: 0 $gutter-size;
+    margin: auto;
+}
+
+.container .row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/// Header
+
+@media screen and (min-width: 640px) {
+    header.header {
+        .site-name {
+            width: 25%;
+            float: left;
+        }
+
+        .main-menu {
+            width: 75%;
+            float: right;
+        }
+    }
+}
+
+/// Main Content
+
+@media screen and (min-width: 640px) {
+    main.main-content {
+        aside.aside {
+            width: 30%;
+            float: right;
+        }
+
+        section.content {
+            width: 65%;
+            float: left;
+        }
+    }
+}
+
+/// Footer
+
+@media screen and (min-width: 640px) {
+    footer.footer {
+        .footer-column {
+            width: 33%;
+            float: left;
+            padding-right: 10px;
+        }
+
+        .footer-third {
+            padding-right: 0;
+        }
+    }
+}
+
+/// Gallery
+
+/// Gallery
+/*
+@media screen and (min-width: 640px) {
+    .block-gallery {
+        .block-gallery-row {
+            width: 33%;
+            float: left;
+            padding: 10px;
+        }
+    }
+} */

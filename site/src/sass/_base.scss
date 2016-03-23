@@ -1,0 +1,76 @@
+/// Base style for this project
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $base-text-color;
+}
+
+a {
+    text-decoration: none;
+    color: #BD003A;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/// Header
+
+header.header {
+    background: #eee;
+    padding: 20px 0;
+}
+
+// Logo & Site Name
+
+.site-name {
+    h2, p {
+        margin: 0;
+    }
+}
+
+// Nav
+
+.main-menu {
+    a {
+        color: $base-text-color;
+        padding: 5px 10px;
+    }
+}
+
+/// Main
+
+main.main-content {
+    padding: 20px 0;
+}
+
+/// Aside
+
+aside.aside {
+    padding: 20px;
+    background: #e1e1e1;
+}
+
+/// Footer
+
+footer.footer {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+}
