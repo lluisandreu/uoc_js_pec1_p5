@@ -11,7 +11,7 @@ function isotope() {
 	  percentPosition: true, 
 	  masonry: {
 		  columnWidth: 100,
-		  gutter: 10
+		  gutter: 10, 
 		}
 	});
 }

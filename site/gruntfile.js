@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 	      }
 	    },
 		jshint: {
-		  files: ['Gruntfile.js', 'src/**/*.js'],
+		  files: ['Gruntfile.js', 'src/js/*.js'],
 		  options: {
 		    globals: {
 		      jQuery: true,
@@ -55,22 +55,23 @@ module.exports = function(grunt) {
 			}
 		},
 		watch: {
-			css: {
+			scss: {
 				files: '**/*.scss',
 				tasks: ['compass']
 			},
 			scripts: {
                 files: ['src/js/*.js'],
-                tasks: ['uglify']
+                tasks: ['uglify', 'jshint']
             },
 		},
 		browserSync: {
-		    files: ["dist/css/*.css", "dist/js/*.js"],
-		    options: {
-		    	watchTask: true,
-		        server: {
-		            baseDir: "./dist",
-		            index: "index.html"
+		    dev: {
+		        bsFiles: {
+		            src : 'dist/css/styles.css'
+		        },
+		        options: {
+		        	watchTask: true,
+		            proxy: "paam/uoc_js/pec1/site/dist/"
 		        }
 		    }
 		}
